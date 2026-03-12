@@ -46,17 +46,17 @@ function toggleMode() {
 
 function updateImage () {
 const img = document.getElementById('img1');
-const isDark = document.body.classList.toggle('dark');
+const isLight = document.documentElement.classList.contains('light');
 
-img.src = isDark ? './img/computer.jpg' : './img/computer2.jpg';
+img.src = isLight ? './img/computer2.jpg' : './img/computer.jpg';
 }
 
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.classList.toggle('light', savedTheme === 'light');
-    updateImage();
 }
+updateImage();
 
 const titleElement = document.querySelector('#name');
 const text = "Leila Rocha";
