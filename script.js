@@ -41,16 +41,21 @@ function toggleMode() {
     localStorage.setItem('theme', mode);
 
     updateTextColor();
+    updateImage();
 }
 
+function updateImage () {
 const img = document.getElementById('img1');
 const isDark = document.body.classList.toggle('dark');
 
-img.src = isDark ? './img/computer.jpeg' : './img/computer2.jpg';
+img.src = isDark ? './img/computer.jpg' : './img/computer2.jpg';
+}
+
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.classList.toggle('light', savedTheme === 'light');
+    updateImage();
 }
 
 const titleElement = document.querySelector('#name');
@@ -73,7 +78,7 @@ function animateText() {
         index--;
         } else {
             isTyping = true;
-            currentColor = currentColor === (document.documentElement.classList.contains('light') ? 'black' : '#fff') ? '#C94C16' : (document.documentElement.classList.contains('light') ? 'black' : '#fff');
+            currentColor = currentColor === (document.documentElement.classList.contains('light') ? 'black' : '#fff') ? '#C41E3D' : (document.documentElement.classList.contains('light') ? 'black' : '#fff');
             titleElement.style.color = currentColor;
         }
     }
