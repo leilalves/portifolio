@@ -425,7 +425,7 @@ section {
   color: var(--button-text-color-hover);
 }
 
-img.balls {
+img.stars {
   position: absolute;
   bottom: -6rem;
   right: 5rem;
@@ -680,8 +680,7 @@ img.balls {
   position: relative;
 }
 
-.contact-form form input,
-form textarea {
+.contact-form form input, form textarea {
   word-spacing: 2px;
   width: 100%;
   padding: 14px;
@@ -823,6 +822,9 @@ form textarea {
   .home-text #nome, .home-text #sobre-nome {
     font-size: 60px;
   }
+  img.stars {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1180px) {
@@ -839,7 +841,6 @@ form textarea {
   .home-mac {
     width: 50% !important;
     height: auto;
-    padding-top: 50px;
   }
   .about-img img {
     display: none !important;
