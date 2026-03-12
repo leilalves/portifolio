@@ -51,7 +51,6 @@ const isLight = document.documentElement.classList.contains('light');
 img.src = isLight ? './img/computer2.jpg' : './img/computer.jpg';
 }
 
-
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.classList.toggle('light', savedTheme === 'light');
