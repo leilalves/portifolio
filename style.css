@@ -50,7 +50,7 @@
   
   --text-color: #000000;
   --second-text-color: #a2243d;
-  --card-bg-color: hsla(0, 80%, 44%, 0.5);
+  --card-bg-color: hsla(351, 80%, 44%, 0.7);
 
   --highlight-color: rgba(0, 0, 0, 0.25);
   --switch-bg-url: url("./img/sun.svg");
@@ -864,6 +864,18 @@ img.stars {
     margin: 0;
     padding-inline: 7rem;
   }
+  .home-presentation .dev {
+    font-size: 30px;
+  }
+  .home-presentation .my-name {
+    font-size: 20px;
+  }
+  .home-presentation .sou {
+    font-size: 20px;
+  }
+  .home-presentation .full {
+    font-size: 20px;
+  }
   .about {
     display: flex;
     flex-direction: column;
@@ -877,7 +889,7 @@ img.stars {
     height: auto;
     max-width: 80%;
   }
-  img.balls {
+  img.stars {
     display: none !important;
   }
   .contact {
@@ -898,7 +910,7 @@ img.stars {
     width: 70%;
   }
   .layer, .layer h5, .layer p {
-    width: 84%;
+    width: 95%;
   }
   .layer p {
     line-height: 0.9;
